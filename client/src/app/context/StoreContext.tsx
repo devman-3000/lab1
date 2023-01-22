@@ -21,7 +21,6 @@ export function useStoreContext() {
 
 export function StoreProvider({children}: PropsWithChildren<any>) {
     const [basket, setBasket] = useState<Basket | null>(null);
-    console.log(basket); 
 
     function removeItem(productId: number, quantity: number) {
         if (!basket) return;
